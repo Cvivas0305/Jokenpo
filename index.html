@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JokenPo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JokenPo</h1>
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#X1F44A;</button> <!--se le colica id para poder llamarlo por separadoe en el ccs uy estilicarlo-->
+            <button id="paper" onclick="playHuman('paper')">&#x1f590;</button>
+            <button id="scissors" onclick="playHuman('scissors')">&#x270c;</button>
+        </div>
+<p class="result"></p> <!--una clase para poder llmar desde css quien gano el resultado-->
+
+        <p class="your-score">Sua Puntuacao: <span id="human-score">0</span></p>
+        <p class="machine-score">Puntuacao da Alexa: <span id="machine-score">0</span></p>
+    </div>
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>

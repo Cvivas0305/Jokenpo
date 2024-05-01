@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    /*toda ccx debe comenxzar con estaq configuracion*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+    /*este enlace me da para cambiar el fondo cada vez que inicie*/
+    background-size: cover;
+    /* con este le puedo dar todo el tamano del fondo de la imagen*/
+    display: flex;
+    /*con este el cuadro donde esta todo queda en el centro si lo quitro todo queda pegado arriba*/
+    justify-content: center;
+    /*con este ajusto el cuado en el centro  si lo quito lo tira todo pa la izquierda*/
+    align-items: center;
+    /*con este el cuadro queda justo en el centro de la pagina es decir sin cuadro arriba abaj izq derec si lo quito queda una franja en centro*/
+    min-height: 100vh;
+    /*con este le doy la altura minina si se lo quito queda a lo ancho de toda la pantalla*/
+}
+
+.container {
+    padding: 20px;
+    /*las letras dentro del cuador quedan pegadas al borde jcompletico*/
+    background-color: #FFFFFF;
+    /*fondo balnco del cuadro*/
+    border-radius: 10px;
+    /*con este le doy un borde redondeado al cuadro si lo quitoa las esquinas quedan puntiaigudas*/
+    display: flex;
+    /*display fles coloco todos los elementos del cuadro en fila es decir uno al lado del otro*/
+    flex-direction: column;
+    /*display-directrio me dal aopcion de colocar los elementas en vcarias direcciones en este caso en colunma uno debajo del otro*/
+    align-items: center;
+    /*con este alineo los items delntro del cuador en el centro se pueden tirar pa la izq der arrib a bajo varios formas*/
+    justify-content: center;
+    /*con este se justifica el contenido dentyro del cuadro*/
+}
+
+.buttons {
+    /*esta clase se colco en html en <div class="buttons"> para lllamar y darl estylo a los cuadritos de los punitos*/
+    margin-top: 20px;
+    /*espacion entre los punitos y la palabra jokenpo*/
+    display: flex;
+    /*para que quyeden los tgres botyoners pegaditos y en linea*/
+    gap: 40px;
+    /*para darle espacion entre los punos ya que estasn dentro de un display flex*/
+
+}
+
+button {
+    padding: 10px;
+    /*el espacio de los punitos*/
+    font-size: 50px;
+    /*el taman de ls caudro de los punitos*/
+    cursor: pointer;
+    /* el cursor pone la manito cuando pasa por encima de ellos*/
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    /*le da una transicion en el momento dep pasar el cursoar para clikar que queda opca el tiempo lo puyedo escoje se ussa con pnt ejempolo 0.6s*/
+}
+
+button:hover {
+    /*hover es para darl una transicion al moneto dfe pasar el curso por encima para clickar en el puno lo opca por 0.7s*/
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: #a200ff;
+
+}
+
+#paper {
+    background-color: #9ee01a;
+}
+
+#scissors {
+    background-color: #7dbeed;
+
+}
+
+p {
+    /*estos paragrafos con las palabvras sua pontuacao*/
+    font-weight: bold;
+    /*ES UN COMO UNA NEGRITA ENGRUESA LA LETRRA*/
+    font-size: large;
+    /*tasman ode las letras*/
+}
+
+.your-score span {
+    /*el span se usa para cambgiar la caracterisitica de una seccion en este caso es el mar5cador el numero " 0 " */
+    color: rgb(21, 64, 137);
+    /* para dar color por rgb se debe oclocar solo los numero*/
+}
+
+.machine-score span {
+    color: rgb(224, 71, 15);
+}
+
